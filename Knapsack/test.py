@@ -21,26 +21,30 @@ start = perf_counter()
 result = simpleRecursion.knapsack(W, n, wt, val)
 end = perf_counter()
 
-print(result)
-print(f'Time elapsed: {end - start} seconds')
+print("Simple Recursion:")
+print(f'Maximum value: {result}')
+print(f'Time elapsed: {end - start} seconds\n')
 
 start = perf_counter()
 result = memoizationWithWrapper.knapsack(W, n, wt, val)
 end = perf_counter()
 
-print(result)
-print(f'Time elapsed: {end - start} seconds')
+print("Memoization w/ Wrapper:")
+print(f'Maximum value: {result}')
+print(f'Time elapsed: {end - start} seconds\n')
 
 start = perf_counter()
 result = dynamicProgramming.knapsack(W, n, wt, val)
 end = perf_counter()
 
-print(result)
-print(f'Time elapsed: {end - start} seconds')
+print("Memoization w/ Dynamic Programming:")
+print(f'Maximum value: {result}')
+print(f'Time elapsed: {end - start} seconds\n')
 
 start = perf_counter()
 result = cythonVersion.knapsack(W, n, wt, val)
 end = perf_counter()
 
-print(result)
-print(f'Time elapsed: {end - start} seconds')
+print("Cython:")
+print(f'Maximum value: {result}')
+print(f'Time elapsed: {end - start} seconds\n')
