@@ -2,7 +2,7 @@ from time import perf_counter
 import sys
 import random
 
-def knapsack(int max_weight, int num, weights, values):
+def knapsack(int max_weight, int num, weights, values) -> int:
     """
     Solves a basic knapsack problem using dynamic programming and Cython.
 
